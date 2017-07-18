@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+var set = setTimeout(runFun,2000);
+function runFun() {
+	document.write("This text will be visible after 2 secunde");
+}
+//------
+var set = setInterval(runFun,2000);
+function runFun() {
+	document.write("This text repeats every 2 seconds");
+}
+//------
+var set = setInterval(runFun,2000);
+var i = 0;
+function runFun() {
+	document.write("This text is limited display");
+	i++;
+	if( i > 2 ){
+		clearInterval(set);  // stops setInterval
+	}
+}
+</script>
+</body>
+</html>
