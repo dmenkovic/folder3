@@ -1,2 +1,2 @@
-# folder3
-set
+# set
+setTimeout(); setInterval(); 
